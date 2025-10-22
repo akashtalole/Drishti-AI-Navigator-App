@@ -1,0 +1,87 @@
+graph TB
+    subgraph "Frontend Layer - Accessible UI"
+        A[User Interface] --> B[Voice Input - Nova Sonic]
+        A --> C[Keyboard Navigation]
+        A --> D[Screen Reader Support]
+        A --> E[High Contrast/Large Text]
+        B --> F[Speech-to-Text Processing]
+        F --> G[Command Interpreter]
+    end
+
+    subgraph "API Gateway Layer"
+        H[FastAPI Backend]
+        I[WebSocket Server]
+        J[Real-time Updates]
+    end
+
+    subgraph "AI Agent Orchestration - Strands Framework"
+        K[Strands Agent Coordinator]
+        K --> L[Navigation Agent]
+        K --> M[Content Simplification Agent]
+        K --> N[Form Assistance Agent]
+        K --> O[Audio Description Agent]
+    end
+
+    subgraph "Amazon Bedrock AgentCore"
+        P[AgentCore Browser Tool]
+        P --> Q[Isolated Browser Session]
+        Q --> R[DOM Analysis]
+        Q --> S[Element Identification]
+        Q --> T[Accessibility Tree Parsing]
+    end
+
+    subgraph "Nova Models Layer"
+        U[Nova Act - Browser Actions]
+        V[Nova Pro - Vision/Understanding]
+        W[Nova Lite - Text Processing]
+        X[Nova Sonic - Voice I/O]
+    end
+
+    subgraph "Accessibility Services"
+        Y[Content Simplifier]
+        Z[ARIA Label Generator]
+        AA[Alt Text Generator]
+        AB[Keyboard Shortcut Mapper]
+        AC[Voice Command Library]
+    end
+
+    subgraph "Data & Security Layer"
+        AD[User Preferences DB]
+        AE[Session Storage]
+        AF[CloudWatch Logs]
+        AG[S3 - Audio Cache]
+    end
+
+    A --> H
+    G --> H
+    H --> K
+    K --> P
+    P --> U
+    P --> V
+    L --> U
+    M --> W
+    O --> X
+    
+    R --> Y
+    S --> Z
+    T --> AA
+    
+    Y --> I
+    Z --> I
+    AA --> I
+    AC --> I
+    I --> J
+    J --> A
+    
+    K --> AD
+    Q --> AE
+    H --> AF
+    X --> AG
+
+    style A fill:#e1f5ff
+    style K fill:#fff4e1
+    style P fill:#e1ffe1
+    style U fill:#ffe1f5
+    style V fill:#ffe1f5
+    style W fill:#ffe1f5
+    style X fill:#ffe1f5

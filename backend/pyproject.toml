@@ -1,0 +1,46 @@
+[project]
+name = "browser-order-automation-agentcore"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "aiofiles>=23.2.1",
+    "alembic>=1.13.0",
+    "anthropic>=0.7.0",
+    "aws-sdk-bedrock-runtime>=0.1.0",
+    "beautifulsoup4>=4.12.0",
+    "bedrock-agentcore>=0.1.5",
+    "black>=23.11.0",
+    "boto3>=1.34.0",
+    "botocore>=1.34.0",
+    "fastapi>=0.104.0",
+    "flake8>=6.1.0",
+    "httpx>=0.27.0",
+    "isort>=5.12.0",
+    "mcp>=1.11.0",
+    "mypy>=1.7.1",
+    "nest-asyncio>=1.5.8",
+    "nova-act>=0.1.0",
+    "opencv-python>=4.8.1.78",
+    "pillow>=10.1.0",
+    "playwright>=1.40.0",
+    "psycopg2-binary>=2.9.9",
+    "pydantic>=2.5.0",
+    "pydantic-settings>=2.1.0",
+    "pytest>=7.4.3",
+    "pytest-asyncio>=0.21.1",
+    "pytest-mock>=3.12.0",
+    "python-dotenv>=1.0.0",
+    "python-jose[cryptography]>=3.3.0",
+    "python-multipart>=0.0.6",
+    "python-socketio>=5.10.0",
+    "rich>=13.7.0",
+    "smithy-aws-core>=0.1.0",
+    "sqlalchemy>=2.0.23",
+    "strands-agents>=1.6.0",
+    "strands-agents-tools>=0.2.5",
+    "structlog>=23.2.0",
+    "uvicorn[standard]>=0.24.0",
+    "websockets>=12.0",
+]
